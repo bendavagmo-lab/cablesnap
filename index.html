@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CableSnap — Keep your setup under control</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f6fa;
+            color: #17181c;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0 25px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .badge {
+            background: #17181c;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        h1 {
+            font-size: clamp(45px, 7vw, 72px);
+            line-height: 0.98;
+            letter-spacing: -3px;
+            margin: 20px 0;
+        }
+
+        .description {
+            color: #60636b;
+            font-size: 19px;
+            line-height: 1.55;
+            max-width: 600px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 23px;
+            background: #17181c;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+        }
+
+        .product {
+            height: 330px;
+            background: white;
+            border: 1px solid #e5e6eb;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.08);
+        }
+
+        /* Simple cable/desk illustration */
+        .desk {
+            width: 260px;
+            height: 170px;
+            border: 7px solid #25262b;
+            border-radius: 14px;
+            position: relative;
+        }
+
+        .clip {
+            position: absolute;
+            width: 45px;
+            height: 30px;
+            border: 5px solid #25262b;
+            border-radius: 9px;
+            background: white;
+        }
+
+        .cable {
+            position: absolute;
+            width: 8px;
+            height: 90px;
+            background: #777b84;
+            border-radius: 5px;
+            transform: rotate(90deg);
+        }
+
+        .clip1 {
+            left: 30px;
+            bottom: 20px;
+        }
+
+        .clip2 {
+            right: 30px;
+            bottom: 20px;
+        }
+
+        .cable1 {
+            left: 45px;
+            bottom: -5px;
+        }
+
+        .cable2 {
+            right: 45px;
+            bottom: -5px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding-bottom: 60px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e5e6eb;
+            border-radius: 18px;
+            padding: 25px;
+        }
+
+        .icon {
+            font-size: 28px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+        }
+
+        .card p {
+            color: #62656d;
+            line-height: 1.5;
+        }
+
+        .interest {
+            background: #17181c;
+            color: white;
+            border-radius: 25px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .interest h2 {
+            font-size: 30px;
+        }
+
+        .interest p {
+            color: #c9cad0;
+        }
+
+        button {
+            border: none;
+            padding: 14px 22px;
+            border-radius: 11px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 15px;
+            color: #c9cad0;
+            min-height: 22px;
+        }
+
+        footer {
+            text-align: center;
+            color: #777b84;
+            font-size: 13px;
+            padding-bottom: 25px;
+        }
+
+        @media (max-width: 760px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo">CableSnap.</div>
+        <div class="badge">Coming soon</div>
+    </header>
+
+
+    <section class="hero">
+
+        <div>
+
+            <span class="badge"
+                  style="background:#e8e9ee;color:#34363d;">
+                For desks & setups
+            </span>
+
+            <h1>
+                Your cables.<br>
+                Finally under control.
+            </h1>
+
+            <p class="description">
+                Stop charging and USB cables disappearing behind your desk.
+                CableSnap is designed to keep the cables you use most
+                right where you need them.
+            </p>
+
+            <a class="button" href="#interest">
+                I'm interested →
+            </a>
+
+        </div>
+
+
+        <div class="product">
+
+            <div class="desk">
+
+                <div class="clip clip1"></div>
+                <div class="clip clip2"></div>
+
+                <div class="cable cable1"></div>
+                <div class="cable cable2"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="features">
+
+        <div class="card">
+            <div class="icon">🎮</div>
+
+            <h2>Made for setups</h2>
+
+            <p>
+                Keep gaming, charging and USB cables organised
+                around your desk.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">📌</div>
+
+            <h2>Stick where you need them</h2>
+
+            <p>
+                Designed for suitable smooth surfaces so your cables
+                stay within reach.
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">✨</div>
+
+            <h2>Less cable chaos</h2>
+
+            <p>
+                Grab the cable you need without reaching behind
+                your desk.
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="interest" id="interest">
+
+        <h2>Want CableSnap?</h2>
+
+        <p>
+            We're testing interest before launching.
+            No payment required.
+        </p>
+
+        <button onclick="showInterest()">
+            I'm interested
+        </button>
+
+        <div id="message"></div>
+
+    </section>
+
+
+    <footer>
+        © 2026 CableSnap · Product concept / interest test
+    </footer>
+
+</div>
+
+
+<script>
+
+function showInterest() {
+
+    document.getElementById("message").textContent =
+        "Nice! Thanks for your interest! 🚀";
+
+}
+
+</script>
+
+</body>
+</html>
